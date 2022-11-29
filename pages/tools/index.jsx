@@ -1,3 +1,7 @@
+import Link from "next/link"
+import Layout from "../../components/Layout"
+import ContentContainer from "../../components/ui/ContentContainer"
+
 export default function Tools() {
   return(
     <Layout>
