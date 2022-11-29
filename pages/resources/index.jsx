@@ -19,6 +19,13 @@ export default function Resources() {
       </ContentContainer>
 
       <ContentContainer type="files">
+        Mal: Lag din egen by.
+        Mal: Lag din egen karakter.
+        Mal: Lag ditt eget eventyr.
+      </ContentContainer>
+
+
+      <ContentContainer type="files">
         Figurer til perling
       </ContentContainer>
 

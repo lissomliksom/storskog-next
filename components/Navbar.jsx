@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import SidebarMenu from './SidebarMenu';
+import Modal from './ui/Modal';
 import { SunIcon, MoonIcon, MusicalNoteIcon, CubeIcon } from '@heroicons/react/24/outline'
 
 const Navbar = ({ menuOpen, setMenuOpen, darkMode, setDarkMode}) => {
@@ -11,14 +13,17 @@ const Navbar = ({ menuOpen, setMenuOpen, darkMode, setDarkMode}) => {
   return(
     <div className="flex justify-between px-5 py-4 transition duration-1000 ease-in-out bg-gray-900 border-b border-gray-900">
 
-      <div className="flex space-x-5">
+      <div className="flex items-center space-x-5">
         <SidebarMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Link href="/" className="font-medium text-white">Storskogmysteriene</Link>
       </div>
 
       <div className="flex items-center space-x-10">
 
+        <Modal />
+
         <button
-          onClick={() => console.log('Open modal: Dice module')}
+          onClick={() => openModal()}
           className="text-gray-500 transition duration-200 ease-in cursor-not-allowed hover:text-gray-300">
           <CubeIcon className="w-6 h-6" />
         </button>

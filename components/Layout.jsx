@@ -10,6 +10,7 @@ export const siteTitle = 'Storskogmysteriene';
 export default function Layout({ children, home }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
 
   function toggleBackgroundImage(){
     if(darkMode){ return styles.containerGeneralDark } 

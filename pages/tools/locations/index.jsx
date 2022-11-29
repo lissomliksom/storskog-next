@@ -2,8 +2,7 @@ import Layout from "../../../components/Layout"
 import ContentContainer from "../../../components/ui/ContentContainer"
 import { server } from '../../../config'
 
-
-export default function Locations() {
+export default function Locations({ locations }) {
   return (
     <Layout>
       <ContentContainer type="text">
