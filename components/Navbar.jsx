@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import SidebarMenu from './SidebarMenu';
+import { SunIcon, MoonIcon, MusicalNoteIcon, CubeIcon, HomeIcon } from '@heroicons/react/24/outline'
+import Home from '../pages';
 import Modal from './ui/Modal';
-import { SunIcon, MoonIcon, MusicalNoteIcon, CubeIcon } from '@heroicons/react/24/outline'
+import DiceRoller from './tools/DiceRoller';
+import MusicPlayer from './tools/MusicPlayer';
+
 
 const Navbar = ({ menuOpen, setMenuOpen, darkMode, setDarkMode}) => {
 
@@ -15,24 +19,27 @@ const Navbar = ({ menuOpen, setMenuOpen, darkMode, setDarkMode}) => {
 
       <div className="flex items-center space-x-5">
         <SidebarMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Link href="/" className="font-medium text-white">Storskogmysteriene</Link>
+        <Link href="/" className="text-white">
+            <HomeIcon className="w-6 h-6 md:hidden" />
+          <span className="hidden font-medium md:block">Storskogmysteriene</span>
+        </Link>
       </div>
 
       <div className="flex items-center space-x-10">
 
-        <Modal />
+        <Modal
+          buttonContent={<CubeIcon className="w-6 h-6" />}
+          buttonStyle="text-gray-500 transition duration-200 ease-in cursor-not-allowed hover:text-gray-300"
+          modalTitle="Rull terning"
+          modalContent={<DiceRoller />}
+        />
 
-        <button
-          onClick={() => openModal()}
-          className="text-gray-500 transition duration-200 ease-in cursor-not-allowed hover:text-gray-300">
-          <CubeIcon className="w-6 h-6" />
-        </button>
-
-        <button
-          onClick={() => console.log('music on/off')}
-          className="text-gray-500 transition duration-200 ease-in cursor-not-allowed hover:text-gray-300">
-          <MusicalNoteIcon className="w-6 h-6" />
-        </button>
+        <Modal
+          buttonContent={<MusicalNoteIcon className="w-6 h-6" />}
+          buttonStyle="text-gray-500 transition duration-200 ease-in cursor-not-allowed hover:text-gray-300"
+          modalTitle="Rull terning"
+          modalContent={<MusicPlayer />}
+        />
       
         <button 
           onClick={() => darkModeHandler()} 

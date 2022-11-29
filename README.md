@@ -7,7 +7,6 @@ Repo for pen-and-paper RPG 'Storskogmysteriene'. Interactive application and web
 #### Components
 
 - Modal
-- Grid controls
 - DiceRoller
 - RandomTable (loot, shop inventory, apothekary inventory, armorer inventory, peddler inventory)
 - RandomName (people, stores, taverns)
@@ -25,6 +24,7 @@ Repo for pen-and-paper RPG 'Storskogmysteriene'. Interactive application and web
 
 - Add and update all textcontent
 - Persist darkmode-state between route-changes
+- Add darkmode to modals
 - Check download paths after deploy
 - Update lang-settings: https://nextjs.org/docs/advanced-features/custom-document
 - Responsive background-images desktop / mobile
