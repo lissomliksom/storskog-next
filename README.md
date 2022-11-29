@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Introduction
 
-## Getting Started
+Repo for pen-and-paper RPG 'Storskogmysteriene'. Interactive application and website for desktop, tablet and mobile. Work in progress.
 
-First, run the development server:
+## Todo
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+#### Components
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Modal
+- Grid controls
+- DiceRoller
+- RandomTable (loot, shop inventory, apothekary inventory, armorer inventory, peddler inventory)
+- RandomName (people, stores, taverns)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### Api
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Random adjectives and nouns for tavern generator, i.e. "The Silver Swan"
+- Random first names and surnames for npc generator, i.e. "Andor Goldfoot"
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#### A11y
 
-## Learn More
+- Color contrasts
 
-To learn more about Next.js, take a look at the following resources:
+#### Other
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Add and update all textcontent
+- Persist darkmode-state between route-changes
+- Check download paths after deploy
+- Update lang-settings: https://nextjs.org/docs/advanced-features/custom-document
+- Responsive background-images desktop / mobile
+- Implement darkmode with day/night-switch.
+- Make /utils folder for utility-functions, i.e. formatSlug(), getRandomEntry(), generateRandom().
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future plans and additions
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Change music / soundscapes depending on day/night-mode
+- Rewrite to TypeScript
+- Named routes
+- Breadcrumbs
+- Add generator that generates custom images with DallE API
+- Deploy: https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme

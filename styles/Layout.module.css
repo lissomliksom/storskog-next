@@ -1,0 +1,20 @@
+.containerHome, .containerGeneralLight, .containerGeneralDark {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.containerHome {
+  background-image: url('/images/bg/frontpage-1920x960.jpg');
+}
+
+.containerGeneralLight {
+  background-image: url('/images/bg/paper-1920x1080-light.jpg');
+  
+}
+
+.containerGeneralDark {
+  background-image: url('/images/bg/paper-1920x1080-dark.jpg');
+}
