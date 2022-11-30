@@ -34,6 +34,10 @@ export default function Items({items}) {
               id={item.id}
               name={item.name}
               rarity={item.rarity}
+              type={item.type}
+              value={item.value}
+              location={item.location}
+              descriptionText={item.descriptionText}
               image={item.image}
             />
           ))}
